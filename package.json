@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next build && next start",
+    "lint": "next lint",
+    "export": "next build && next export",
+    "start:static": "npx http-server ./out -c -1"
   },
   "dependencies": {
     "axios": "^1.1.2",
